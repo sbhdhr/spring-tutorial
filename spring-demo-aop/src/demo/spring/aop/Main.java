@@ -3,6 +3,7 @@ package demo.spring.aop;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import demo.spring.aop.dao.AccountDAO;
+import demo.spring.aop.dao.MembershipDAO;
 
 public class Main {
 
@@ -16,12 +17,21 @@ public class Main {
 
 		// call the business method
 		accountDAO.addAccount();
-		
-		//call method again
-		accountDAO.addAccount();
+
+		// get membershipdao object
+		MembershipDAO membershipDAO = context.getBean("membershipDAO", MembershipDAO.class);
+
+		// call the business method for membership object
+		membershipDAO.addAccount();
+
+		addAccount();// this will not work as this bean is not instantiated by spring container
 
 		// close the context
 		context.close();
+
+	}
+
+	public static void addAccount() {
 
 	}
 
