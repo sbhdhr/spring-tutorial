@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="demo/spring/aop/aspects/ProfilingAdviceWithLogger.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-aop-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-aop-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-aop-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-aspects-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-aspects-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-aspects-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-beans-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-beans-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-beans-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-indexer-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-indexer-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-indexer-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-support-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-support-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-context-support-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-core-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-core-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-core-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-expression-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-expression-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-expression-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-instrument-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-instrument-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-instrument-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jcl-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jcl-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jcl-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jdbc-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jdbc-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jdbc-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jms-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jms-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-jms-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-messaging-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-messaging-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-messaging-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-orm-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-orm-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-orm-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-oxm-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-oxm-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-oxm-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-test-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-test-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-test-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-tx-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-tx-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-tx-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-web-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-web-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-web-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-webflux-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-webflux-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-webflux-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-webmvc-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-webmvc-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-webmvc-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-websocket-5.1.7.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-websocket-5.1.7.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop/lib/spring-websocket-5.1.7.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Subhashis/sources/spring-tutorial/spring-demo-aop-pointcut-declarations/lib/aspectjweaver-1.9.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
