@@ -22,7 +22,14 @@ public class LoggingAspect {
 	public void afterFindAccountsAdvice(JoinPoint joinPoint, List<AccountDAO> result) {
 		String method = joinPoint.getSignature().toLongString();
 		System.out.println("\n==> Aspect @AfterReturning method:|" + method + "|");
-		System.out.println("The result is: " + result);
+		System.out.println("The result in aspect method is: " + result);
+
+		// modify data
+		if (result != null) {
+			for (AccountDAO temp : result) {
+				temp.setName(temp.getName().toUpperCase());
+			}
+		}
 	}
 
 	@Before("demo.spring.aop.aspects.AopExpressions.forDaoPackageNoGetterSetter()")

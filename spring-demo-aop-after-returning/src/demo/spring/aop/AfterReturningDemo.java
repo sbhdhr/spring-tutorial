@@ -13,11 +13,11 @@ public class AfterReturningDemo {
 
 		// get the bean from spring container
 		AccountDAO accountDAO = context.getBean("accountDAO", AccountDAO.class);
- 
-		
-		//call method to find accounts
-		accountDAO.findAccounts();
-		
+
+		// call method to find accounts and check modified data
+
+		System.out.println("Data in main app: " + accountDAO.findAccounts());
+
 		// close the context
 		context.close();
 
