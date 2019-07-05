@@ -30,7 +30,8 @@ public class ProfilingAdvice {
 			// log the exception
 			System.out.println("\n==> Exception : " + e);
 			// give user custom message
-			result = "Something was not right. Please try later!!";
+			//result = "Something was not right. Please try later!!";
+			throw e;
 		}
 
 		// get end timestamp
