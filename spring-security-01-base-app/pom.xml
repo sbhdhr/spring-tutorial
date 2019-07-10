@@ -5,12 +5,12 @@
 
 
 	<groupId>project.sbhdhr</groupId>
-	<artifactId>spring.security.demo</artifactId>
+	<artifactId>spring-security-01-base-app</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 
 
-	<name>spring.security.demo</name>
+	<name>spring-security-01-base-app</name>
 
 	<properties>
 		<springframework.version>5.1.5.RELEASE</springframework.version>
@@ -65,7 +65,7 @@
 	
 	<build>
 		
-		<finalName>spring.security.demo</finalName>
+		<finalName>spring-security-01-base-app</finalName>
 
 		<pluginManagement>
 			<plugins>
