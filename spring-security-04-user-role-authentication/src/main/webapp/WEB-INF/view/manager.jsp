@@ -1,4 +1,3 @@
-<%@page import="spring.security.demo.controller.HomeController"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 
@@ -33,42 +32,36 @@
 		</nav>
 	
 	
+		
+		
 		<div class="container">
-		  <div class="page-header">
-		    <h1>${title}</h1>      
-		  </div>
+			
+			<div class="panel panel-primary ">
+			  <div class="panel-heading">Welcome Manager</div>
+			  <div class="panel-body">
+			  	<p>This is exclusive to managers only</p>
+			  	<p><a href="${pageContext.request.contextPath}/" class="btn btn-primary">Homepage</a></p>
+			  </div>
+			</div>
+			
+		</div>
+		
+		
+		<div class="container" style="margin-top:50px;">
+		  <p>Credentials : </p>
 		  <p>User : <security:authentication property="principal.username"/></p>      
 		  <p>Roles :  <security:authentication property="principal.authorities"/></p>      
+		
 		</div>
-	
-		
-		<security:authorize access="hasRole(T(spring.security.demo.constants.Roles.Role).MANAGER)">
-			
-			<div class="container">
-				<div class="page-header">
-					<p><a href="${pageContext.request.contextPath}${HomeController.MANAGER_PAGE_URL}"
-					class="btn btn-primary">Manager Dashboard</a></p> 
-				</div>
-			
-			</div>
-		</security:authorize>
-		
-		
-		<security:authorize access="hasRole(T(spring.security.demo.constants.Roles.Role).ADMIN)">
-			
-			<div class="container">
-				<div class="page-header">
-					<p><a href="${pageContext.request.contextPath}${HomeController.ADMIN_PAGE_URL}"
-					class="btn btn-danger">Admin Dashboard</a></p> 
-				</div>
-			
-			</div>
-		</security:authorize>
 		
 		
 		
-			
-			
+		
+		
+		
+		
+		
+		
 		
 		
 		<!--===============================================================================================-->

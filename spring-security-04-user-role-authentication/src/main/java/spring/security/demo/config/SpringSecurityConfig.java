@@ -8,6 +8,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.User.UserBuilder;
 
+import spring.security.demo.constants.Roles.Role;
+import spring.security.demo.controller.HomeController;
+import spring.security.demo.controller.LoginController;
+
 @Configuration
 @EnableWebSecurity
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
@@ -19,9 +23,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		UserBuilder users = User.withDefaultPasswordEncoder();
 		
 		auth.inMemoryAuthentication()
-			.withUser(users.username("john").password("test123").roles("EMPLOYEE"))
-			.withUser(users.username("mary").password("test123").roles("MANAGER"))
-			.withUser(users.username("susan").password("test123").roles("ADMIN"));
+			.withUser(users.username("john").password("test123").roles(Role.EMPLOYEE.toString()))
+			.withUser(users.username("mary").password("test123").roles(Role.EMPLOYEE.toString(),Role.MANAGER.toString()))
+			.withUser(users.username("susan").password("test123").roles(Role.EMPLOYEE.toString(),Role.ADMIN.toString()));
 		
 	}
 
@@ -31,15 +35,17 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		http.authorizeRequests()			
 		.antMatchers("/resources/**").permitAll()
-					.anyRequest().authenticated()
+		.antMatchers("/").hasRole(Role.EMPLOYEE.toString())
+		.antMatchers(HomeController.MANAGER_PAGE_URL+"/**").hasRole(Role.MANAGER.toString())
+		.antMatchers(HomeController.ADMIN_PAGE_URL+"/**").hasRole(Role.ADMIN.toString())
 					.and()
 						.formLogin()
-						.loginPage("/showLoginPage")
+						.loginPage(LoginController.LOGIN_PAGE_URL)
 						.loginProcessingUrl("/authenticateUser")
 						.permitAll()
 					.and()
-		            	.logout()                                    
-		                .permitAll();
+		            	.logout().permitAll();
+		      
 	}
 
 	
