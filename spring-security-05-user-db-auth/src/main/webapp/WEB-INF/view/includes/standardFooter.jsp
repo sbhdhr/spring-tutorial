@@ -1,0 +1,12 @@
+<!--===============================================================================================-->
+<script
+	src="<%=request.getContextPath()%>/resources/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script
+	src="<%=request.getContextPath()%>/resources/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script
+	src="<%=request.getContextPath()%>/resources/vendor/bootstrap/js/popper.js"></script>
+<script
+	src="<%=request.getContextPath()%>/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->

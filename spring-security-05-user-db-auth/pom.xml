@@ -5,12 +5,12 @@
 
 
 	<groupId>project.sbhdhr</groupId>
-	<artifactId>spring-security-04-user-role-authentication</artifactId>
+	<artifactId>spring-security-05-user-db-auth</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 
 
-	<name>spring-security-04-user-role-authentication</name>
+	<name>spring-security-05-user-db-auth</name>
 
 	<properties>
 		<springframework.version>5.1.5.RELEASE</springframework.version>
@@ -90,7 +90,7 @@
 
 	<build>
 
-		<finalName>spring-security-04-user-role-authentication</finalName>
+		<finalName>spring-security-05-user-db-auth</finalName>
 
 		<pluginManagement>
 			<plugins>
