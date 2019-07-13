@@ -1,5 +1,8 @@
 package spring.security.db.auth.config;
 
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -16,19 +19,17 @@ import spring.security.db.auth.constants.UrlConstants;
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	
+	//add reference to security datasource
+	@Autowired
+	private DataSource securityDataSource;
+	
 
-	@SuppressWarnings("deprecation")
+	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		//add our users for in-memory authentication
+		//add jdbc authentication
 		
-		
-		UserBuilder users = User.withDefaultPasswordEncoder();
-		
-		auth.inMemoryAuthentication()
-			.withUser(users.username("john").password("test123").roles(Roles.EMPLOYEE))
-			.withUser(users.username("mary").password("test123").roles(Roles.EMPLOYEE,Roles.MANAGER))
-			.withUser(users.username("susan").password("test123").roles(Roles.EMPLOYEE,Roles.ADMIN));
+		auth.jdbcAuthentication().dataSource(securityDataSource);
 		
 	}
 
@@ -53,6 +54,4 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 		      
 	}
 
-	
-	
 }
