@@ -13,7 +13,7 @@
 	<name>spring-security-02-basic-security</name>
 
 	<properties>
-		<springframework.version>5.1.5.RELEASE</springframework.version>
+		<springframework.version>5.2.0.RELEASE</springframework.version>
 		<springsecurity.version>5.1.5.RELEASE</springsecurity.version>
 
 		<maven.compiler.source>1.11</maven.compiler.source>
